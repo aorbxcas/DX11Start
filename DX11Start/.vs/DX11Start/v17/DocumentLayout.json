@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\39859\\DX11Start\\DX11Start\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\ChiliWin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Graphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\Graphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\ChiliWin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,45 +41,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Graphics.cpp",
+              "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Graphics.cpp",
+              "RelativeDocumentMoniker": "DX11Start\\Graphics.cpp",
+              "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Graphics.cpp",
+              "RelativeToolTip": "DX11Start\\Graphics.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-19T09:44:04.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "App.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\App.cpp",
               "RelativeDocumentMoniker": "DX11Start\\App.cpp",
               "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\App.cpp",
               "RelativeToolTip": "DX11Start\\App.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-18T09:18:49.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Window.h",
-              "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
-              "RelativeDocumentMoniker": "DX11Start\\Window.h",
-              "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
-              "RelativeToolTip": "DX11Start\\Window.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-18T09:09:22.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Windows.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h",
@@ -83,11 +83,28 @@
               "RelativeToolTip": "..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h",
               "ViewState": "AgIAADUAAAAAAAAAAAAAAMMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-15T09:16:56.682Z"
+              "WhenOpened": "2025-08-15T09:16:56.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Window.h",
+              "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
+              "RelativeDocumentMoniker": "DX11Start\\Window.h",
+              "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
+              "RelativeToolTip": "DX11Start\\Window.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-18T09:09:22.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WinMain.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\WinMain.cpp",
               "RelativeDocumentMoniker": "DX11Start\\WinMain.cpp",
@@ -95,12 +112,11 @@
               "RelativeToolTip": "DX11Start\\WinMain.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-14T08:47:43.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T08:47:43.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ChiliWin.h",
               "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.h",
               "RelativeDocumentMoniker": "DX11Start\\ChiliWin.h",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChiliWin.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.cpp",
               "RelativeDocumentMoniker": "DX11Start\\ChiliWin.cpp",
@@ -125,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Window.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.cpp",
               "RelativeDocumentMoniker": "DX11Start\\Window.cpp",
@@ -133,8 +149,7 @@
               "RelativeToolTip": "DX11Start\\Window.cpp",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-16T03:38:27.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T03:38:27.918Z"
             }
           ]
         }

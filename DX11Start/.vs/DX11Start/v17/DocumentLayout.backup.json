@@ -37,8 +37,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -47,27 +51,10 @@
               "RelativeDocumentMoniker": "DX11Start\\App.cpp",
               "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\App.cpp",
               "RelativeToolTip": "DX11Start\\App.cpp",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBgAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-18T09:18:49.632Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Window.h",
-              "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
-              "RelativeDocumentMoniker": "DX11Start\\Window.h",
-              "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
-              "RelativeToolTip": "DX11Start\\Window.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-18T09:09:22.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -82,6 +69,22 @@
               "WhenOpened": "2025-08-15T09:16:56.682Z"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window.h",
+              "DocumentMoniker": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
+              "RelativeDocumentMoniker": "DX11Start\\Window.h",
+              "ToolTip": "C:\\Users\\39859\\DX11Start\\DX11Start\\DX11Start\\Window.h",
+              "RelativeToolTip": "DX11Start\\Window.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-18T09:09:22.375Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "WinMain.cpp",
@@ -91,8 +94,7 @@
               "RelativeToolTip": "DX11Start\\WinMain.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-14T08:47:43.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T08:47:43.314Z"
             },
             {
               "$type": "Document",
@@ -116,12 +118,7 @@
               "RelativeToolTip": "DX11Start\\ChiliWin.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-17T07:30:30.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
+              "WhenOpened": "2025-08-17T07:30:30.952Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "DX11Start\\Window.cpp",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-16T03:38:27.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T03:38:27.918Z"
             }
           ]
         }
