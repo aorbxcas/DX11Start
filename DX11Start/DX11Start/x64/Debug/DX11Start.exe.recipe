@@ -5,7 +5,14 @@
       <FullPath>C:\Users\39859\DX11Start\DX11Start\x64\Debug\DX11Start.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\PixelShader.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\VertexShader.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

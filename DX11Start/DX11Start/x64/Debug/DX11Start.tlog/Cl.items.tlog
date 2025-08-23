@@ -1,8 +1,12 @@
 C:\Users\39859\DX11Start\DX11Start\DX11Start\App.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\App.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliException.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliException.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliTimer.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliTimer.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliWin.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\dxerr.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\dxerr.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\DxgiInfoManager.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\DxgiInfoManager.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Graphics.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Graphics.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Keyboard.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Keyboard.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Mouse.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Mouse.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Window.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Window.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\WindowsMessageMap.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\WindowsMessageMap.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\WinMain.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\WinMain.obj

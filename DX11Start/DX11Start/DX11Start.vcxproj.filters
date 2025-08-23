@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\hlsl">
+      <UniqueIdentifier>{19696d63-6c01-47e4-a521-9b50a2181efd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -36,6 +39,21 @@
     <ClCompile Include="Window.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ChiliException.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dxerr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DxgiInfoManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsMessageMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -56,5 +74,43 @@
     <ClInclude Include="Window.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ChiliException.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxerr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DXGetErrorDescription.inl">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DXGetErrorString.inl">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DxgiInfoManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTrace.inl">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMessageMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>源文件\hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>源文件\hlsl</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

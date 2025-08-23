@@ -103,6 +103,22 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	// // wParam here is the value passed to PostQuitMessage
 	// return msg.wParam;
 
-	return App{}.Go();
+	try
+	{
+		return App{}.Go();
+	}
+	catch( const ChiliException& e )
+	{
+		MessageBox( nullptr,e.what(),e.GetType(),MB_OK | MB_ICONEXCLAMATION );
+	}
+	catch( const std::exception& e )
+	{
+		MessageBox( nullptr,e.what(),"Standard Exception",MB_OK | MB_ICONEXCLAMATION );
+	}
+	catch( ... )
+	{
+		MessageBox( nullptr,"No details available","Unknown Exception",MB_OK | MB_ICONEXCLAMATION );
+	}
+	return -1;
 }
 

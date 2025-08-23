@@ -1,5 +1,6 @@
 ﻿#include "Window.h"
-
+#include <sstream>
+#include "resource.h"
 
 // Window Class Stuff
 Window::WindowClass Window::WindowClass::wndClass;
@@ -49,7 +50,10 @@ Window::Window( int width,int height,const char* name ) noexcept
 	wr.right = width + wr.left;
 	wr.top = 100;
 	wr.bottom = height + wr.top;
-	AdjustWindowRect( &wr,WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,FALSE );
+	if( AdjustWindowRect( &wr,WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,FALSE ) == 0 )
+	{
+		throw CHWND_LAST_EXCEPT();
+	}
 	// create window & get hWnd
 	hWnd = CreateWindow(
 		WindowClass::GetName(),name,
@@ -58,6 +62,10 @@ Window::Window( int width,int height,const char* name ) noexcept
 		nullptr,nullptr,WindowClass::GetInstance(),this
 	);
 	// show window
+	if( hWnd == nullptr )
+	{
+		throw CHWND_LAST_EXCEPT();
+	}
 	ShowWindow( hWnd,SW_SHOWDEFAULT );
 	pGfx = std::make_unique<Graphics>( hWnd );
 }
@@ -71,7 +79,7 @@ void Window::SetTitle( const std::string& title )
 {
 	if( SetWindowText( hWnd,title.c_str() ) == 0 )
 	{
-		return;
+		throw CHWND_LAST_EXCEPT();
 	}
 }
 
@@ -124,6 +132,10 @@ std::optional<int> Window::ProcessMessages()
 
 Graphics& Window::Gfx()
 {
+	if( !pGfx )
+	{
+		throw CHWND_NOGFX_EXCEPT();
+	}
 	return *pGfx;
 }
 
@@ -230,4 +242,67 @@ LRESULT Window::HandleMsg( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noex
 	}
 
 	return DefWindowProc( hWnd,msg,wParam,lParam );
+}
+
+// Window Exception Stuff
+std::string Window::Exception::TranslateErrorCode( HRESULT hr ) noexcept
+{
+	char* pMsgBuf = nullptr;
+	// windows will allocate memory for err string and make our pointer point to it
+	const DWORD nMsgLen = FormatMessage(
+		FORMAT_MESSAGE_ALLOCATE_BUFFER |
+		FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS,
+		nullptr,hr,MAKELANGID( LANG_NEUTRAL,SUBLANG_DEFAULT ),
+		reinterpret_cast<LPSTR>(&pMsgBuf),0,nullptr
+	);
+	// 0 string length returned indicates a failure
+	if( nMsgLen == 0 )
+	{
+		return "Unidentified error code";
+	}
+	// copy error string from windows-allocated buffer to std::string
+	std::string errorString = pMsgBuf;
+	// free windows buffer
+	LocalFree( pMsgBuf );
+	return errorString;
+}
+
+
+Window::HrException::HrException( int line,const char* file,HRESULT hr ) noexcept
+	:
+	Exception( line,file ),
+	hr( hr )
+{}
+
+const char* Window::HrException::what() const noexcept
+{
+	std::ostringstream oss;
+	oss << GetType() << std::endl
+		<< "[Error Code] 0x" << std::hex << std::uppercase << GetErrorCode()
+		<< std::dec << " (" << (unsigned long)GetErrorCode() << ")" << std::endl
+		<< "[Description] " << GetErrorDescription() << std::endl
+		<< GetOriginString();
+	whatBuffer = oss.str();
+	return whatBuffer.c_str();
+}
+
+const char* Window::HrException::GetType() const noexcept
+{
+	return "Chili Window Exception";
+}
+
+HRESULT Window::HrException::GetErrorCode() const noexcept
+{
+	return hr;
+}
+
+std::string Window::HrException::GetErrorDescription() const noexcept
+{
+	return Exception::TranslateErrorCode( hr );
+}
+
+
+const char* Window::NoGfxException::GetType() const noexcept
+{
+	return "Chili Window Exception [No Graphics]";
 }
