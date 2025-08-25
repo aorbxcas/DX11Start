@@ -54,6 +54,36 @@
     <ClCompile Include="WindowsMessageMap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Bindable\Bindable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\IndexBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\InputLayout.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\PixelShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\Topology.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\TransformCbuf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\VertexBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bindable\VertexShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable\Box.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable\Drawable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -102,6 +132,48 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\Bindable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\BindableBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\ConstantBuffers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\IndexBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\InputLayout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\PixelShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\Topology.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\TransformCbuf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\VertexBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\VertexShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable\Box.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable\Drawable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros\GraphicsThrowMacros.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros\WindowsThrowMacros.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

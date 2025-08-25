@@ -1,7 +1,17 @@
 C:\Users\39859\DX11Start\DX11Start\DX11Start\App.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\App.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\Bindable.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Bindable.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\IndexBuffer.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\IndexBuffer.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\InputLayout.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\InputLayout.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\PixelShader.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\PixelShader.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\Topology.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Topology.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\TransformCbuf.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\TransformCbuf.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\VertexBuffer.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\VertexBuffer.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Bindable\VertexShader.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\VertexShader.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliException.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliException.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliTimer.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliTimer.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliWin.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Drawable\Box.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Box.obj
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Drawable\Drawable.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Drawable.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\dxerr.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\dxerr.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\DxgiInfoManager.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\DxgiInfoManager.obj
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Graphics.cpp;C:\Users\39859\DX11Start\DX11Start\DX11Start\x64\Debug\Graphics.obj

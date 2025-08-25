@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include<d3d11.h>
+#include <DirectXMath.h>
 #include <string>
 #include <vector>
 #include "ChiliWin.h"
@@ -8,9 +9,11 @@
 #include<sstream>
 #include "dxerr.h"
 #include "DxgiInfoManager.h"
+#include "d3dcompiler.h"
 
 class Graphics
 {
+    friend class Bindable;
 public:
     class Exception : public ChiliException
     {
@@ -56,6 +59,9 @@ public:
     void EndFrame();
     void ClearBuffer( float red,float green,float blue ) noexcept;
     void DrawTriangle(float angle);
+    void DrawIndexed(UINT count)noexcept(!_DEBUG);
+    void SetProjection( DirectX::FXMMATRIX proj ) noexcept;
+    DirectX::XMMATRIX GetProjection() const noexcept;
 private:
 #ifndef NDEBUG
     DxgiInfoManager infoManager;
@@ -64,4 +70,7 @@ private:
     Microsoft::WRL::ComPtr<IDXGISwapChain> pSwap;
     Microsoft::WRL::ComPtr<ID3D11DeviceContext> pContext;
     Microsoft::WRL::ComPtr<ID3D11RenderTargetView> pTarget;
+    Microsoft::WRL::ComPtr<ID3D11DepthStencilView> pDSV;
+private:
+    DirectX::XMMATRIX projection;
 };
