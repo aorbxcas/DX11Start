@@ -947,6 +947,7 @@
     <ClInclude Include="ChiliWin.h" />
     <ClInclude Include="Drawable\Box.h" />
     <ClInclude Include="Drawable\Drawable.h" />
+    <ClInclude Include="Drawable\DrawableBase.h" />
     <ClInclude Include="dxerr.h" />
     <ClInclude Include="DXGetErrorDescription.inl" />
     <ClInclude Include="DXGetErrorString.inl" />
