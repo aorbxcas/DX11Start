@@ -7,10 +7,16 @@
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\PixelShader.cso</FullPath>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\VertexShader.cso</FullPath>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
