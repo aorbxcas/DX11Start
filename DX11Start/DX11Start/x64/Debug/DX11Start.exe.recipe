@@ -7,6 +7,12 @@
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\TexturePS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\TextureVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
       <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso</FullPath>
     </ContentFile>
     <ContentFile>

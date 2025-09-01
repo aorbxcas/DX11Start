@@ -1,4 +1,6 @@
-﻿  compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso
+﻿  compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\TexturePS.cso
+  compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\TextureVS.cso
+  compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso
   compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendVS.cso
   compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexPS.cso
   compilation object save succeeded; see C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexVS.cso
@@ -18,12 +20,62 @@
   Drawable.cpp
   Pyramid.cpp
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Bindable/Topology.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Bindable/Topology.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Bindable/VertexBuffer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Bindable/VertexBuffer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Bindable/Bindable.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Bindable/Bindable.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Bindable/PixelShader.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Bindable/PixelShader.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
   (编译源文件“Bindable/IndexBuffer.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
       参见“_WIN32_WINNT”的前一个定义
   
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
   (编译源文件“Bindable/IndexBuffer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Bindable/VertexShader.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Bindable/VertexShader.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
       参见“STRICT”的前一个定义
   
@@ -48,56 +100,6 @@ C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: �
       参见“STRICT”的前一个定义
   
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Bindable/Bindable.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
-      参见“_WIN32_WINNT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Bindable/Bindable.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
-      参见“STRICT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Bindable/VertexBuffer.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
-      参见“_WIN32_WINNT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Bindable/VertexBuffer.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
-      参见“STRICT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Bindable/Topology.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
-      参见“_WIN32_WINNT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Bindable/Topology.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
-      参见“STRICT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Bindable/VertexShader.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
-      参见“_WIN32_WINNT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Bindable/VertexShader.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
-      参见“STRICT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Bindable/PixelShader.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
-      参见“_WIN32_WINNT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Bindable/PixelShader.cpp”)
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
-      参见“STRICT”的前一个定义
-  
-C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
   (编译源文件“Drawable/Box.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
       参见“_WIN32_WINNT”的前一个定义
@@ -107,31 +109,668 @@ C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: �
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
       参见“STRICT”的前一个定义
   
+  Sampler.cpp
+  Sheet.cpp
+  Surface.cpp
+  Texture.cpp
   dxerr.cpp
   DxgiInfoManager.cpp
   Graphics.cpp
   Keyboard.cpp
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Drawable/Drawable.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Drawable/Drawable.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
   Mouse.cpp
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Drawable/Pyramid.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Drawable/Pyramid.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+  GDIPlusManager.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(560,44): error C2065: “META_SETBKCOLOR”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(560,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(561,44): error C2065: “META_SETBKMODE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(561,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(562,44): error C2065: “META_SETMAPMODE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(562,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(563,44): error C2065: “META_SETROP2”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(563,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(564,44): error C2065: “META_SETRELABS”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(564,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(565,44): error C2065: “META_SETPOLYFILLMODE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(565,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(566,44): error C2065: “META_SETSTRETCHBLTMODE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(566,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(567,44): error C2065: “META_SETTEXTCHAREXTRA”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(567,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(568,44): error C2065: “META_SETTEXTCOLOR”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(568,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(569,44): error C2065: “META_SETTEXTJUSTIFICATION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(569,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(570,44): error C2065: “META_SETWINDOWORG”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(570,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(571,44): error C2065: “META_SETWINDOWEXT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(571,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(572,44): error C2065: “META_SETVIEWPORTORG”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(572,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(573,44): error C2065: “META_SETVIEWPORTEXT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(573,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(574,44): error C2065: “META_OFFSETWINDOWORG”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(574,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(575,44): error C2065: “META_SCALEWINDOWEXT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(575,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(576,44): error C2065: “META_OFFSETVIEWPORTORG”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(576,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(577,44): error C2065: “META_SCALEVIEWPORTEXT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(577,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(578,44): error C2065: “META_LINETO”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(578,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(579,44): error C2065: “META_MOVETO”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(579,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(580,44): error C2065: “META_EXCLUDECLIPRECT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(580,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(581,44): error C2065: “META_INTERSECTCLIPRECT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(581,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(582,44): error C2065: “META_ARC”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(582,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(583,44): error C2065: “META_ELLIPSE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(583,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(584,44): error C2065: “META_FLOODFILL”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(584,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(585,44): error C2065: “META_PIE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(585,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(586,44): error C2065: “META_RECTANGLE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(586,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(587,44): error C2065: “META_ROUNDRECT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(587,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(588,44): error C2065: “META_PATBLT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(588,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(589,44): error C2065: “META_SAVEDC”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(589,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(590,44): error C2065: “META_SETPIXEL”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(590,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(591,44): error C2065: “META_OFFSETCLIPRGN”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(591,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(592,44): error C2065: “META_TEXTOUT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(592,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(593,44): error C2065: “META_BITBLT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(593,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(594,44): error C2065: “META_STRETCHBLT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(594,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(595,44): error C2065: “META_POLYGON”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(595,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(596,44): error C2065: “META_POLYLINE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(596,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(597,44): error C2065: “META_ESCAPE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(597,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(598,44): error C2065: “META_RESTOREDC”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(598,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(599,44): error C2065: “META_FILLREGION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(599,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(600,44): error C2065: “META_FRAMEREGION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(600,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(601,44): error C2065: “META_INVERTREGION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(601,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(602,44): error C2065: “META_PAINTREGION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(602,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(603,44): error C2065: “META_SELECTCLIPREGION”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(603,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(604,44): error C2065: “META_SELECTOBJECT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(604,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(605,44): error C2065: “META_SETTEXTALIGN”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(605,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(607,44): error C2065: “META_CHORD”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(607,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(608,44): error C2065: “META_SETMAPPERFLAGS”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(608,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(609,44): error C2065: “META_EXTTEXTOUT”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(609,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(610,44): error C2065: “META_SETDIBTODEV”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(610,5): error C2056: 非法表达式
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(611,44): error C2065: “META_SELECTPALETTE”: 未声明的标识符
+  (编译源文件“Drawable/Surface.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(611,44): error C1003: 错误计数超过 100；正在停止编译
+  (编译源文件“Drawable/Surface.cpp”)
+  
   Window.cpp
   WindowsMessageMap.cpp
   WinMain.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(560,44): error C2065: “META_SETBKCOLOR”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(560,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(561,44): error C2065: “META_SETBKMODE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(561,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(562,44): error C2065: “META_SETMAPMODE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(562,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(563,44): error C2065: “META_SETROP2”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(563,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(564,44): error C2065: “META_SETRELABS”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(564,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(565,44): error C2065: “META_SETPOLYFILLMODE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(565,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(566,44): error C2065: “META_SETSTRETCHBLTMODE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(566,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(567,44): error C2065: “META_SETTEXTCHAREXTRA”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(567,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(568,44): error C2065: “META_SETTEXTCOLOR”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(568,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(569,44): error C2065: “META_SETTEXTJUSTIFICATION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(569,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(570,44): error C2065: “META_SETWINDOWORG”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(570,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(571,44): error C2065: “META_SETWINDOWEXT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(571,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(572,44): error C2065: “META_SETVIEWPORTORG”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(572,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(573,44): error C2065: “META_SETVIEWPORTEXT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(573,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(574,44): error C2065: “META_OFFSETWINDOWORG”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(574,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(575,44): error C2065: “META_SCALEWINDOWEXT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(575,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(576,44): error C2065: “META_OFFSETVIEWPORTORG”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(576,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(577,44): error C2065: “META_SCALEVIEWPORTEXT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(577,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(578,44): error C2065: “META_LINETO”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(578,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(579,44): error C2065: “META_MOVETO”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(579,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(580,44): error C2065: “META_EXCLUDECLIPRECT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(580,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(581,44): error C2065: “META_INTERSECTCLIPRECT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(581,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(582,44): error C2065: “META_ARC”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(582,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(583,44): error C2065: “META_ELLIPSE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(583,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(584,44): error C2065: “META_FLOODFILL”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(584,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(585,44): error C2065: “META_PIE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(585,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(586,44): error C2065: “META_RECTANGLE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(586,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(587,44): error C2065: “META_ROUNDRECT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(587,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(588,44): error C2065: “META_PATBLT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(588,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(589,44): error C2065: “META_SAVEDC”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(589,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(590,44): error C2065: “META_SETPIXEL”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(590,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(591,44): error C2065: “META_OFFSETCLIPRGN”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(591,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(592,44): error C2065: “META_TEXTOUT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(592,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(593,44): error C2065: “META_BITBLT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(593,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(594,44): error C2065: “META_STRETCHBLT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(594,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(595,44): error C2065: “META_POLYGON”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(595,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(596,44): error C2065: “META_POLYLINE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(596,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(597,44): error C2065: “META_ESCAPE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(597,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(598,44): error C2065: “META_RESTOREDC”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(598,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(599,44): error C2065: “META_FILLREGION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(599,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(600,44): error C2065: “META_FRAMEREGION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(600,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(601,44): error C2065: “META_INVERTREGION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(601,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(602,44): error C2065: “META_PAINTREGION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(602,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(603,44): error C2065: “META_SELECTCLIPREGION”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(603,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(604,44): error C2065: “META_SELECTOBJECT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(604,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(605,44): error C2065: “META_SETTEXTALIGN”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(605,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(607,44): error C2065: “META_CHORD”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(607,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(608,44): error C2065: “META_SETMAPPERFLAGS”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(608,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(609,44): error C2065: “META_EXTTEXTOUT”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(609,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(610,44): error C2065: “META_SETDIBTODEV”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(610,5): error C2056: 非法表达式
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(611,44): error C2065: “META_SELECTPALETTE”: 未声明的标识符
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GdiplusEnums.h(611,44): error C1003: 错误计数超过 100；正在停止编译
+  (编译源文件“Tools/GDIPlusManager.cpp”)
+  
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Drawable/Drawable.cpp”)
+  (编译源文件“Drawable/Texture.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
       参见“_WIN32_WINNT”的前一个定义
   
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Drawable/Drawable.cpp”)
+  (编译源文件“Drawable/Texture.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
       参见“STRICT”的前一个定义
   
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
-  (编译源文件“Drawable/Pyramid.cpp”)
+  (编译源文件“Drawable/Sampler.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
       参见“_WIN32_WINNT”的前一个定义
   
 C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
-  (编译源文件“Drawable/Pyramid.cpp”)
+  (编译源文件“Drawable/Sampler.cpp”)
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
       参见“STRICT”的前一个定义
   
@@ -145,6 +784,17 @@ C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: �
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
       参见“STRICT”的前一个定义
   
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(4,9): warning C4005: “_WIN32_WINNT”: 宏重定义
+  (编译源文件“Drawable/Sheet.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      参见“_WIN32_WINNT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\ChiliWin.h(44,9): warning C4005: “STRICT”: 宏重定义
+  (编译源文件“Drawable/Sheet.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(23,9):
+      参见“STRICT”的前一个定义
+  
+C:\Users\39859\DX11Start\DX11Start\DX11Start\Graphics.cpp(5,39): warning C4081: 应输入“newline”；找到“;”
 C:\Users\39859\DX11Start\DX11Start\DX11Start\Window.cpp(55,3): warning C4297: “Window::Window”: 假定函数不引发异常，但确实发生了
       C:\Users\39859\DX11Start\DX11Start\DX11Start\Window.cpp(55,3):
       在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
@@ -178,5 +828,3 @@ D:\Visual Studio\VC\Tools\MSVC\14.44.35207\include\optional(82,17): warning C424
               _Ty=int
           ]
   
-C:\Users\39859\DX11Start\DX11Start\DX11Start\Graphics.cpp(5,39): warning C4081: 应输入“newline”；找到“;”
-  DX11Start.vcxproj -> C:\Users\39859\DX11Start\DX11Start\x64\Debug\DX11Start.exe

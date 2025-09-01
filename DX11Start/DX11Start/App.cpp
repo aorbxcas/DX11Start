@@ -6,8 +6,15 @@
 #include "Drawable/Box.h"
 #include <memory>
 #include "Drawable/Pyramid.h"
+#include "Drawable/Sheet.h"
+#include "Drawable/SkinnedBox.h"
 #include "Tools/ChiliMath.h"
 
+#include "Drawable/Surface.h"
+#include "Tools/GDIPlusManager.h"
+
+
+GDIPlusManager gdipm;
 App::App()
     :
     wnd( 800,600,"The Donkey Fart Box" )
@@ -38,9 +45,9 @@ App::App()
                 //     gfx,rng,adist,ddist,
                 //     odist,rdist,longdist,latdist
                 // );
-                return std::make_unique<Box>(
+                return std::make_unique<SkinnedBox>(
                     gfx,rng,adist,ddist,
-                    odist,rdist,bdist
+                    odist,rdist
                 );
             default:
                 assert( false && "bad drawable type in factory" );
