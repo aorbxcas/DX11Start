@@ -13,11 +13,17 @@
 #include "Drawable/Surface.h"
 #include "Tools/GDIPlusManager.h"
 
+#include "imgui/imgui.h"
+#include "imgui/imgui_impl_win32.h"
+#include "imgui/imgui_impl_dx11.h"
+
+namespace dx = DirectX;
 
 GDIPlusManager gdipm;
 App::App()
     :
-    wnd( 800,600,"The Donkey Fart Box" )
+    wnd( 800,600,"The Donkey Fart Box" ),
+    light( wnd.Gfx() )
 {
     class Factory
     {
@@ -30,27 +36,31 @@ App::App()
         {
             switch( typedist( rng ) )
             {
-            case 0:
-                return std::make_unique<Pyramid>(
-                    gfx,rng,adist,ddist,
-                    odist,rdist
-                );
-            case 1:
+            // case 0:
+            //     return std::make_unique<Pyramid>(
+            //         gfx,rng,adist,ddist,
+            //         odist,rdist
+            //     );
+            // case 1:
+            //     return std::make_unique<Box>(
+            //         gfx,rng,adist,ddist,
+            //         odist,rdist,bdist
+            //     );
+            // case 2:
+            //     // return std::make_unique<Melon>(
+            //     //     gfx,rng,adist,ddist,
+            //     //     odist,rdist,longdist,latdist
+            //     // );
+            //     return std::make_unique<SkinnedBox>(
+            //         gfx,rng,adist,ddist,
+            //         odist,rdist
+            //     );
+            default:
+                //assert( false && "bad drawable type in factory" );
                 return std::make_unique<Box>(
                     gfx,rng,adist,ddist,
                     odist,rdist,bdist
                 );
-            case 2:
-                // return std::make_unique<Melon>(
-                //     gfx,rng,adist,ddist,
-                //     odist,rdist,longdist,latdist
-                // );
-                return std::make_unique<SkinnedBox>(
-                    gfx,rng,adist,ddist,
-                    odist,rdist
-                );
-            default:
-                assert( false && "bad drawable type in factory" );
                 return {};
             }
         }
@@ -71,7 +81,8 @@ App::App()
     drawables.reserve( nDrawables );
     std::generate_n( std::back_inserter( drawables ),nDrawables,f );
     
-    wnd.Gfx().SetProjection( DirectX::XMMatrixPerspectiveLH( 1.0f,3.0f / 4.0f,0.5f,40.0f ) );
+    wnd.Gfx().SetProjection( dx::XMMatrixPerspectiveLH( 1.0f,3.0f / 4.0f,0.5f,40.0f ) );
+    //wnd.Gfx().SetCamera( dx::XMMatrixTranslation( 0.0f,0.0f,20.0f ) );
     
 }
 
@@ -107,12 +118,51 @@ void App::DoFrame()
     // wnd.Gfx().ClearBuffer( c,c,1.0f );
     // wnd.Gfx().DrawTriangle(timer.Peek());
     // wnd.Gfx().EndFrame();
-    auto dt = timer.Mark();
-    wnd.Gfx().ClearBuffer( 0.07f,0.0f,0.12f );
+    auto dt = timer.Mark() * speed_factor;
+    static char buffer[1024];
+    wnd.Gfx().SetCamera( cam.GetMatrix() );
+    light.Bind( wnd.Gfx() );
+    //wnd.Gfx().ClearBuffer( 0.07f,0.0f,0.12f );
+    
+    if( wnd.kbd.KeyIsPressed( VK_SPACE ) )
+    {
+        wnd.Gfx().DisableImgui();
+    }
+    else
+    {
+        wnd.Gfx().EnableImgui();
+    }
+    wnd.Gfx().BeginFrame( 0.07f,0.0f,0.12f );
+    
     for( auto& b : drawables )
     {
         b->Update( dt );
         b->Draw( wnd.Gfx() );
     }
+    light.Draw(wnd.Gfx());
+    if (wnd.Gfx().IsImguiEnabled() )
+    {
+        if( show_demo_window )
+        {
+            ImGui::ShowDemoWindow( &show_demo_window );
+        }else
+        {
+            if( ImGui::Begin( "Simulation Speed" ) )
+            {
+                ImGui::SliderFloat( "Speed Factor",&speed_factor,0.0f,4.0f );
+                // ImGui::Text( "Application average %.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
+                // ImGui::InputText( "Butts",buffer,sizeof( buffer ) );
+                ImGui::Text( "%.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
+                ImGui::Text( "Status: %s",wnd.kbd.KeyIsPressed( VK_SPACE ) ? "PAUSED" : "RUNNING" );
+            }
+            ImGui::End();
+            // imgui window to control camera
+            cam.SpawnControlWindow();
+            light.SpawnControlWindow();
+        }
+    }
+
+    // ImGui::Render();
+    // ImGui_ImplDX11_RenderDrawData( ImGui::GetDrawData() );
     wnd.Gfx().EndFrame();
 }

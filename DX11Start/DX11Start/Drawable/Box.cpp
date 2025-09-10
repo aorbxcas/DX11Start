@@ -29,6 +29,7 @@ Box::Box( Graphics& gfx,
 		struct Vertex
 		{
 			dx::XMFLOAT3 pos;
+			dx::XMFLOAT3 n;
 		};
 		// const std::vector<Vertex> vertices =
 		// {
@@ -42,15 +43,17 @@ Box::Box( Graphics& gfx,
 		// 	{ 1.0f,1.0f,1.0f },
 		// };
 		// AddStaticBind( std::make_unique<VertexBuffer>( gfx,vertices )	);
-		auto model = Cube::Make<Vertex>();
+		auto model = Cube::MakeIndependent<Vertex>();
+		model.SetNormalsIndependentFlat();
+		
 		model.Transform( dx::XMMatrixScaling( 1.0f,1.0f,1.2f ) );
 		AddStaticBind( std::make_unique<VertexBuffer>( gfx,model.vertices ) );
 		__drv_inTry
-		auto pvs = std::make_unique<VertexShader>( gfx,L"ColorIndexVS.cso" );
+		auto pvs = std::make_unique<VertexShader>( gfx,L"PhongVS.cso" );
 		auto pvsbc = pvs->GetBytecode();
 		AddStaticBind( std::move( pvs ) );
 
-		AddStaticBind( std::make_unique<PixelShader>( gfx,L"ColorIndexPS.cso" ) );
+		AddStaticBind( std::make_unique<PixelShader>( gfx,L"PhongPS.cso" ) );
 		// const std::vector<unsigned short> indices =
 		// {
 		// 	0,2,1, 2,3,1,
@@ -63,34 +66,40 @@ Box::Box( Graphics& gfx,
 		// AddStaticIndexBuffer( std::make_unique<IndexBuffer>( gfx,indices ) );
 		AddStaticIndexBuffer( std::make_unique<IndexBuffer>( gfx,model.indices ) );
 
-		struct PixelShaderConstants
-		{
-			struct
-			{
-				float r;
-				float g;
-				float b;
-				float a;
-			} face_colors[8];
-		};
-		const PixelShaderConstants cb2 =
-		{
-			{
-				{ 1.0f,1.0f,1.0f },
-				{ 1.0f,0.0f,0.0f },
-				{ 0.0f,1.0f,0.0f },
-				{ 1.0f,1.0f,0.0f },
-				{ 0.0f,0.0f,1.0f },
-				{ 1.0f,0.0f,1.0f },
-				{ 0.0f,1.0f,1.0f },
-				{ 0.0f,0.0f,0.0f },
-			}
-		};
-		AddStaticBind( std::make_unique<PixelConstantBuffer<PixelShaderConstants>>( gfx,cb2 ) );
+		// struct PixelShaderConstants
+		// {
+		// 	struct
+		// 	{
+		// 		float r;
+		// 		float g;
+		// 		float b;
+		// 		float a;
+		// 	} face_colors[8];
+		// };
+		// const PixelShaderConstants cb2 =
+		// {
+		// 	{
+		// 		{ 1.0f,1.0f,1.0f },
+		// 		{ 1.0f,0.0f,0.0f },
+		// 		{ 0.0f,1.0f,0.0f },
+		// 		{ 1.0f,1.0f,0.0f },
+		// 		{ 0.0f,0.0f,1.0f },
+		// 		{ 1.0f,0.0f,1.0f },
+		// 		{ 0.0f,1.0f,1.0f },
+		// 		{ 0.0f,0.0f,0.0f },
+		// 	}
+		// };
 
+		// struct PSLightConstants
+		// {
+		// 	dx::XMVECTOR pos;
+		// };
+		// AddStaticBind( std::make_unique<PixelConstantBuffer<PSLightConstants>>( gfx ) );
+		
 		const std::vector<D3D11_INPUT_ELEMENT_DESC> ied =
 		{
 			{ "Position",0,DXGI_FORMAT_R32G32B32_FLOAT,0,0,D3D11_INPUT_PER_VERTEX_DATA,0 },
+			{ "Normal",0,DXGI_FORMAT_R32G32B32_FLOAT,0,12,D3D11_INPUT_PER_VERTEX_DATA,0 },
 		};
 		AddStaticBind( std::make_unique<InputLayout>( gfx,ied,pvsbc ) );
 

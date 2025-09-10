@@ -2,27 +2,39 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\x64\Debug\DX11Start.exe</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\x64\Debug\DX11Start.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\TexturePS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\TexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\TextureVS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\TextureVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\PhongPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorBlendVS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\PhongVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexPS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\SolidPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\39859\DX11Start\DX11Start\DX11Start\ColorIndexVS.cso</FullPath>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\SolidVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ColorBlendPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ColorBlendVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ColorIndexPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ColorIndexVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
