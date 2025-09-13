@@ -34,6 +34,7 @@ App::App()
         {}
         std::unique_ptr<Drawable> operator()()
         {
+            const DirectX::XMFLOAT3 mat = { cdist( rng ),cdist( rng ),cdist( rng ) };
             switch( typedist( rng ) )
             {
             // case 0:
@@ -59,7 +60,8 @@ App::App()
                 //assert( false && "bad drawable type in factory" );
                 return std::make_unique<Box>(
                     gfx,rng,adist,ddist,
-                    odist,rdist,bdist
+                    odist,rdist,bdist,
+                    mat
                 );
                 return {};
             }
@@ -75,6 +77,7 @@ App::App()
         std::uniform_int_distribution<int> latdist{ 5,20 };
         std::uniform_int_distribution<int> longdist{ 10,40 };
         std::uniform_int_distribution<int> typedist{ 0,2 };
+        std::uniform_real_distribution<float> cdist{ 0.0f,1.0f };
     };
 
     Factory f( wnd.Gfx() );
