@@ -124,7 +124,7 @@ void App::DoFrame()
     auto dt = timer.Mark() * speed_factor;
     static char buffer[1024];
     wnd.Gfx().SetCamera( cam.GetMatrix() );
-    light.Bind( wnd.Gfx() );
+    light.Bind( wnd.Gfx() ,cam.GetMatrix());
     //wnd.Gfx().ClearBuffer( 0.07f,0.0f,0.12f );
     
     if( wnd.kbd.KeyIsPressed( VK_SPACE ) )
@@ -152,8 +152,7 @@ void App::DoFrame()
         {
             if( ImGui::Begin( "Simulation Speed" ) )
             {
-                ImGui::SliderFloat( "Speed Factor",&speed_factor,0.0f,4.0f );
-                // ImGui::Text( "Application average %.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
+		        ImGui::SliderFloat( "Speed Factor",&speed_factor,0.0f,6.0f,"%.4f",3.2f );                // ImGui::Text( "Application average %.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
                 // ImGui::InputText( "Butts",buffer,sizeof( buffer ) );
                 ImGui::Text( "%.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
                 ImGui::Text( "Status: %s",wnd.kbd.KeyIsPressed( VK_SPACE ) ? "PAUSED" : "RUNNING" );

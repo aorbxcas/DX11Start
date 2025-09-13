@@ -1069,6 +1069,7 @@
     <ClInclude Include="Drawable\SolidSphere.h" />
     <ClInclude Include="Drawable\Sphere.h" />
     <ClInclude Include="Drawable\Surface.h" />
+    <ClInclude Include="Drawable\TestObject.h" />
     <ClInclude Include="Drawable\Texture.h" />
     <ClInclude Include="dxerr.h" />
     <ClInclude Include="DXGetErrorDescription.inl" />
