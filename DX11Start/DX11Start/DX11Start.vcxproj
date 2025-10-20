@@ -844,6 +844,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="Drawable\Cylinder.cpp" />
     <ClCompile Include="Drawable\Drawable.cpp">
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -1023,6 +1024,12 @@
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)%(Filename).cso</ObjectFileOutput>
     </FxCompile>
+    <FxCompile Include="hlsl\IndexedPhongPS.hlsl">
+      <FileType>Document</FileType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
     <ClCompile Include="ImguiManager.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -1057,6 +1064,7 @@
     <ClInclude Include="Drawable\Box.h" />
     <ClInclude Include="Drawable\Cone.h" />
     <ClInclude Include="Drawable\Cube.h" />
+    <ClInclude Include="Drawable\Cylinder.h" />
     <ClInclude Include="Drawable\Drawable.h" />
     <ClInclude Include="Drawable\DrawableBase.h" />
     <ClInclude Include="Drawable\IndexedTriangleList.h" />

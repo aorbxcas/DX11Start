@@ -1,4 +1,3 @@
-﻿  compilation object save succeeded; see C:\Users\Aorb\DX11Start\DX11Start\DX11Start\PhongPS.cso
+﻿  compilation object save succeeded; see C:\Users\Aorb\DX11Start\DX11Start\DX11Start\IndexedPhongPS.cso
   App.cpp
-C:\Users\Aorb\DX11Start\DX11Start\DX11Start\App.cpp(67,13): warning C4065: switch 语句包含“default”但是未包含“case”标签
   DX11Start.vcxproj -> C:\Users\Aorb\DX11Start\DX11Start\x64\Debug\DX11Start.exe

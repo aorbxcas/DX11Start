@@ -9,6 +9,7 @@
 #include "Drawable/Sheet.h"
 #include "Drawable/SkinnedBox.h"
 #include "Tools/ChiliMath.h"
+#include "Drawable/Cylinder.h"
 
 #include "Drawable/Surface.h"
 #include "Tools/GDIPlusManager.h"
@@ -35,8 +36,18 @@ App::App()
         std::unique_ptr<Drawable> operator()()
         {
             const DirectX::XMFLOAT3 mat = { cdist( rng ),cdist( rng ),cdist( rng ) };
-            switch( typedist( rng ) )
+            switch( sdist( rng ) )
             {
+            case 0:
+                return std::make_unique<Box>(
+                    gfx,rng,adist,ddist,
+                    odist,rdist,bdist,mat
+                );
+            case 1:
+                return std::make_unique<Cylinder>(
+                    gfx,rng,adist,ddist,odist,
+                    rdist,bdist,tdist
+                );
             // case 0:
             //     return std::make_unique<Pyramid>(
             //         gfx,rng,adist,ddist,
@@ -69,6 +80,7 @@ App::App()
     private:
         Graphics& gfx;
         std::mt19937 rng{ std::random_device{}() };
+        std::uniform_int_distribution<int> sdist{ 0,1 };
         std::uniform_real_distribution<float> adist{ 0.0f,PI * 2.0f };
         std::uniform_real_distribution<float> ddist{ 0.0f,PI * 0.5f };
         std::uniform_real_distribution<float> odist{ 0.0f,PI * 0.08f };
@@ -78,6 +90,7 @@ App::App()
         std::uniform_int_distribution<int> longdist{ 10,40 };
         std::uniform_int_distribution<int> typedist{ 0,2 };
         std::uniform_real_distribution<float> cdist{ 0.0f,1.0f };
+        std::uniform_int_distribution<int> tdist{ 3,30 };
     };
 
     Factory f( wnd.Gfx() );

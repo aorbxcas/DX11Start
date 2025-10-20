@@ -56,6 +56,7 @@ void PointLight::Draw( Graphics& gfx ) const noexcept(!_DEBUG)
 
 void PointLight::Bind( Graphics& gfx ,DirectX::FXMMATRIX view) const noexcept
 {
+    // 将灯光世界坐标转换到相机坐标
     auto dataCopy = cbData;
     const auto pos = DirectX::XMLoadFloat3( &cbData.pos );
     DirectX::XMStoreFloat3( &dataCopy.pos,DirectX::XMVector3Transform( pos,view ) );
