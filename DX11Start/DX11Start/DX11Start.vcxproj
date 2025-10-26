@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="AssTest.cpp" />
     <ClCompile Include="Bindable\Bindable.cpp">
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -1047,6 +1048,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="AssTest.h" />
     <ClInclude Include="Bindable\Bindable.h" />
     <ClInclude Include="Bindable\BindableBase.h" />
     <ClInclude Include="Bindable\ConstantBuffers.h" />
@@ -1103,6 +1105,7 @@
     <ClInclude Include="resource1.h" />
     <ClInclude Include="Tools\ChiliMath.h" />
     <ClInclude Include="Tools\GDIPlusManager.h" />
+    <ClInclude Include="VertexLayout.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowsMessageMap.h" />
   </ItemGroup>

@@ -18,7 +18,16 @@
 #include "imgui/imgui_impl_win32.h"
 #include "imgui/imgui_impl_dx11.h"
 
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
+
+#include "VertexLayout.h"
+
+#include "AssTest.h"
+
 namespace dx = DirectX;
+
 
 GDIPlusManager gdipm;
 App::App()
@@ -26,6 +35,13 @@ App::App()
     wnd( 800,600,"The Donkey Fart Box" ),
     light( wnd.Gfx() )
 {
+    // 自行安装assimp.lib并链接
+    Assimp::Importer imp;
+    auto model = imp.ReadFile( "models\\suzanne.obj",
+        aiProcess_Triangulate |
+        aiProcess_JoinIdenticalVertices
+    );
+
     class Factory
     {
     public:
@@ -47,6 +63,11 @@ App::App()
                 return std::make_unique<Cylinder>(
                     gfx,rng,adist,ddist,odist,
                     rdist,bdist,tdist
+                );
+            case 2:
+                return std::make_unique<AssTest>(
+                    gfx,rng,adist,ddist,
+                    odist,rdist,mat,1.5f
                 );
             // case 0:
             //     return std::make_unique<Pyramid>(
@@ -80,7 +101,7 @@ App::App()
     private:
         Graphics& gfx;
         std::mt19937 rng{ std::random_device{}() };
-        std::uniform_int_distribution<int> sdist{ 0,1 };
+        std::uniform_int_distribution<int> sdist{ 0,2 };
         std::uniform_real_distribution<float> adist{ 0.0f,PI * 2.0f };
         std::uniform_real_distribution<float> ddist{ 0.0f,PI * 0.5f };
         std::uniform_real_distribution<float> odist{ 0.0f,PI * 0.08f };
