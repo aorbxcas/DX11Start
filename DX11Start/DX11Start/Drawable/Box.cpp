@@ -40,13 +40,13 @@ Box::Box( Graphics& gfx,
 		model.SetNormalsIndependentFlat();
 		
 		model.Transform( dx::XMMatrixScaling( 1.0f,1.0f,1.2f ) );
-		AddStaticBind( std::make_unique<VertexBuffer>( gfx,model.vertices ) );
+		AddStaticBind( std::make_unique<Bind::VertexBuffer>( gfx,model.vertices ) );
 		__drv_inTry
-		auto pvs = std::make_unique<VertexShader>( gfx,L"PhongVS.cso" );
+		auto pvs = std::make_unique<Bind::VertexShader>( gfx,L"PhongVS.cso" );
 		auto pvsbc = pvs->GetBytecode();
 		AddStaticBind( std::move( pvs ) );
 
-		AddStaticBind( std::make_unique<PixelShader>( gfx,L"PhongPS.cso" ) );
+		AddStaticBind( std::make_unique<Bind::PixelShader>( gfx,L"PhongPS.cso" ) );
 		// const std::vector<unsigned short> indices =
 		// {
 		// 	0,2,1, 2,3,1,
@@ -57,7 +57,7 @@ Box::Box( Graphics& gfx,
 		// 	0,1,4, 1,5,4
 		// };
 		// AddStaticIndexBuffer( std::make_unique<IndexBuffer>( gfx,indices ) );
-		AddStaticIndexBuffer( std::make_unique<IndexBuffer>( gfx,model.indices ) );
+		AddStaticIndexBuffer( std::make_unique<Bind::IndexBuffer>( gfx,model.indices ) );
 
 		// struct PixelShaderConstants
 		// {
@@ -94,14 +94,14 @@ Box::Box( Graphics& gfx,
 			{ "Position",0,DXGI_FORMAT_R32G32B32_FLOAT,0,0,D3D11_INPUT_PER_VERTEX_DATA,0 },
 			{ "Normal",0,DXGI_FORMAT_R32G32B32_FLOAT,0,12,D3D11_INPUT_PER_VERTEX_DATA,0 },
 		};
-		AddStaticBind( std::make_unique<InputLayout>( gfx,ied,pvsbc ) );
+		AddStaticBind( std::make_unique<Bind::InputLayout>( gfx,ied,pvsbc ) );
 
-		AddStaticBind( std::make_unique<Topology>( gfx,D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST ) );
+		AddStaticBind( std::make_unique<Bind::Topology>( gfx,D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST ) );
 	}else
 	{
 		SetIndexFromStatic();
 	}
-	AddBind( std::make_unique<TransformCbuf>( gfx,*this ) );
+	AddBind( std::make_unique<Bind::TransformCbuf>( gfx,*this ) );
 	// 材质，多次加载
 	struct PSMaterialConstant
 	{
@@ -111,7 +111,7 @@ Box::Box( Graphics& gfx,
 		float padding[2];
 	} colorConst;
 	colorConst.color = material;
-	AddBind( std::make_unique<PixelConstantBuffer<PSMaterialConstant>>( gfx,colorConst,1u ) );
+	AddBind( std::make_unique<Bind::PixelConstantBuffer<PSMaterialConstant>>( gfx,colorConst,1u ) );
 	
 	// model deformation transform (per instance, not stored as bind)
 	dx::XMStoreFloat3x3(

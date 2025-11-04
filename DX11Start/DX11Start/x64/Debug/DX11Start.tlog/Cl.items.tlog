@@ -11,13 +11,11 @@ D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Bindable\VertexShader.cpp;D:
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Camera.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Camera.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ChiliException.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliException.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\ChiliTimer.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\ChiliTimer.obj
+D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Color.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Color.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Box.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Box.obj
-D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Cylinder.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Cylinder.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Drawable.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Drawable.obj
-D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Pyramid.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Pyramid.obj
+D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Mesh.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Mesh.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Sampler.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Sampler.obj
-D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Sheet.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Sheet.obj
-D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\SkinnedBox.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\SkinnedBox.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\SolidSphere.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\SolidSphere.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Surface.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Surface.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Drawable\Texture.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Texture.obj
@@ -35,6 +33,7 @@ D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Keyboard.cpp;D:\DevProject\F
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Mouse.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Mouse.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\PointLight.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\PointLight.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Tools\GDIPlusManager.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\GDIPlusManager.obj
+D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\VertexLayout.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\VertexLayout.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\Window.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\Window.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\WindowsMessageMap.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\WindowsMessageMap.obj
 D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\WinMain.cpp;D:\DevProject\ForkPro\DX11Start\DX11Start\DX11Start\x64\Debug\WinMain.obj

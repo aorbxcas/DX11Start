@@ -8,6 +8,7 @@
 #include <assimp/postprocess.h>
 #include "VertexLayout.h"
 
+using namespace Bind;
 AssTest::AssTest( Graphics& gfx,std::mt19937& rng,
 		std::uniform_real_distribution<float>& adist,
 		std::uniform_real_distribution<float>& ddist,

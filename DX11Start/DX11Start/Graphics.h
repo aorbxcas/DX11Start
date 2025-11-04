@@ -10,10 +10,16 @@
 #include "dxerr.h"
 #include "DxgiInfoManager.h"
 #include "d3dcompiler.h"
+#include "ConditionalNoexcept.h"
+
+namespace Bind
+{
+    class Bindable;
+}
 
 class Graphics
 {
-    friend class Bindable;
+    friend Bind::Bindable;
 public:
     class Exception : public ChiliException
     {

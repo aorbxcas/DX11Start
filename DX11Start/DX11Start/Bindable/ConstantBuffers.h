@@ -2,7 +2,9 @@
 #include "Bindable.h"
 #include "../Macros/GraphicsThrowMacros.h"
 
-template<typename C>
+namespace Bind
+{
+	template<typename C>
 class ConstantBuffer : public Bindable
 {
 public:
@@ -84,3 +86,4 @@ public:
 		GetContext( gfx )->PSSetConstantBuffers( slot,1u,pConstantBuffer.GetAddressOf() );
 	}
 };
+}
