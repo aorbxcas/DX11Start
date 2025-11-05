@@ -5,7 +5,6 @@
 
 #include "Drawable/Box.h"
 #include <memory>
-#include "Drawable/Sheet.h"
 #include "Tools/ChiliMath.h"
 
 #include "Drawable/Surface.h"
@@ -27,35 +26,17 @@ namespace dx = DirectX;
 
 
 GDIPlusManager gdipm;
-void App::ShowModelWindow()
-{
-    if( ImGui::Begin( "Model" ) )
-    {
-        using namespace std::string_literals;
-
-        ImGui::Text( "Orientation" );
-        ImGui::SliderAngle( "Roll",&pos.roll,-180.0f,180.0f );
-        ImGui::SliderAngle( "Pitch",&pos.pitch,-180.0f,180.0f );
-        ImGui::SliderAngle( "Yaw",&pos.yaw,-180.0f,180.0f );
-		
-        ImGui::Text( "Position" );
-        ImGui::SliderFloat( "X",&pos.x,-20.0f,20.0f );
-        ImGui::SliderFloat( "Y",&pos.y,-20.0f,20.0f );
-        ImGui::SliderFloat( "Z",&pos.z,-20.0f,20.0f );
-    }
-    ImGui::End();
-}
 App::App()
     :
     wnd( 800,600,"The Donkey Fart Box" ),
     light( wnd.Gfx() )
 {
     // 自行安装assimp.lib并链接
-    Assimp::Importer imp;
-    auto model = imp.ReadFile( "models\\suzanne.obj",
-        aiProcess_Triangulate |
-        aiProcess_JoinIdenticalVertices
-    );
+    // Assimp::Importer imp;
+    // auto model = imp.ReadFile( "models\\suzanne.obj",
+    //     aiProcess_Triangulate |
+    //     aiProcess_JoinIdenticalVertices
+    // );
     
     // class Factory
     // {
@@ -172,8 +153,6 @@ void App::DoFrame()
     // wnd.Gfx().EndFrame();
     auto dt = timer.Mark() * speed_factor;
     static char buffer[1024];
-    wnd.Gfx().SetCamera( cam.GetMatrix() );
-    light.Bind( wnd.Gfx() ,cam.GetMatrix());
     //wnd.Gfx().ClearBuffer( 0.07f,0.0f,0.12f );
     
     if( wnd.kbd.KeyIsPressed( VK_SPACE ) )
@@ -186,38 +165,51 @@ void App::DoFrame()
     }
     wnd.Gfx().BeginFrame( 0.07f,0.0f,0.12f );
     
+    wnd.Gfx().SetCamera( cam.GetMatrix() );
+    light.Bind( wnd.Gfx(),cam.GetMatrix() );
     // for( auto& b : drawables )
     // {
     //     b->Update( dt );
     //     b->Draw( wnd.Gfx() );
     // }
-    const auto transform = dx::XMMatrixRotationRollPitchYaw( pos.roll,pos.pitch,pos.yaw ) *
-    dx::XMMatrixTranslation( pos.x,pos.y,pos.z );
-    nano.Draw( wnd.Gfx(),transform );
+    nano.Draw( wnd.Gfx());
     light.Draw(wnd.Gfx());
-    ShowModelWindow();
-    if (wnd.Gfx().IsImguiEnabled() )
-    {
-        if( show_demo_window )
-        {
-            ImGui::ShowDemoWindow( &show_demo_window );
-        }else
-        {
-            if( ImGui::Begin( "Simulation Speed" ) )
-            {
-		        ImGui::SliderFloat( "Speed Factor",&speed_factor,0.0f,6.0f,"%.4f",3.2f );                // ImGui::Text( "Application average %.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
-                // ImGui::InputText( "Butts",buffer,sizeof( buffer ) );
-                ImGui::Text( "%.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
-                ImGui::Text( "Status: %s",wnd.kbd.KeyIsPressed( VK_SPACE ) ? "PAUSED" : "RUNNING" );
-            }
-            ImGui::End();
-            // imgui window to control camera
-            cam.SpawnControlWindow();
-            light.SpawnControlWindow();
-        }
-    }
+    ShowImguiDemoWindow();
+    cam.SpawnControlWindow();
+    light.SpawnControlWindow();
+    nano.ShowWindow();
+    
+
+    // if (wnd.Gfx().IsImguiEnabled() )
+    // {
+    //     if( show_demo_window )
+    //     {
+    //         ImGui::ShowDemoWindow( &show_demo_window );
+    //     }else
+    //     {
+    //         if( ImGui::Begin( "Simulation Speed" ) )
+    //         {
+		  //       ImGui::SliderFloat( "Speed Factor",&speed_factor,0.0f,6.0f,"%.4f",3.2f );                // ImGui::Text( "Application average %.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
+    //             // ImGui::InputText( "Butts",buffer,sizeof( buffer ) );
+    //             ImGui::Text( "%.3f ms/frame (%.1f FPS)",1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate );
+    //             ImGui::Text( "Status: %s",wnd.kbd.KeyIsPressed( VK_SPACE ) ? "PAUSED" : "RUNNING" );
+    //         }
+    //         ImGui::End();
+    //         // imgui window to control camera
+    //         cam.SpawnControlWindow();
+    //         light.SpawnControlWindow();
+    //     }
+    // }
 
     // ImGui::Render();
     // ImGui_ImplDX11_RenderDrawData( ImGui::GetDrawData() );
     wnd.Gfx().EndFrame();
+}
+void App::ShowImguiDemoWindow()
+{
+    static bool show_demo_window = true;
+    if( show_demo_window )
+    {
+        ImGui::ShowDemoWindow( &show_demo_window );
+    }
 }
