@@ -136,7 +136,8 @@
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\TexturePS.hlsl",
               "RelativeToolTip": "..\\..\\hw3d\\hw3d\\TexturePS.hlsl",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-09-07T14:13:34.418Z"
+              "WhenOpened": "2025-09-07T14:13:34.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -158,7 +159,8 @@
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendVS.hlsl",
               "RelativeToolTip": "..\\..\\hw3d\\hw3d\\ColorBlendVS.hlsl",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-09-07T14:13:29.429Z"
+              "WhenOpened": "2025-09-07T14:13:29.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -199,7 +201,8 @@
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendPS.hlsl",
               "RelativeToolTip": "..\\..\\hw3d\\hw3d\\ColorBlendPS.hlsl",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-09-07T14:13:35.414Z"
+              "WhenOpened": "2025-09-07T14:13:35.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -286,7 +289,8 @@
               "RelativeToolTip": "DX11Start\\ChiliWin.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-17T07:30:30.952Z"
+              "WhenOpened": "2025-08-17T07:30:30.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

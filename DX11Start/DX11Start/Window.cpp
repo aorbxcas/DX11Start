@@ -70,7 +70,17 @@ Window::Window( int width,int height,const char* name ) noexcept
 	ShowWindow( hWnd,SW_SHOWDEFAULT );
 	// Init ImGui Win32 Impl
 	ImGui_ImplWin32_Init( hWnd );
-	pGfx = std::make_unique<Graphics>( hWnd );
+	pGfx = std::make_unique<Graphics>( hWnd ,width,height);
+	// 鼠标设备输入检测
+	RAWINPUTDEVICE rid;
+	rid.usUsagePage = 0x01; // mouse page
+	rid.usUsage = 0x02; // mouse usage
+	rid.dwFlags = 0;
+	rid.hwndTarget = nullptr;
+	if( RegisterRawInputDevices( &rid,1,sizeof( rid ) ) == FALSE )
+	{
+		throw CHWND_LAST_EXCEPT();
+	}
 }
 
 Window::~Window()
@@ -133,6 +143,58 @@ std::optional<int> Window::ProcessMessages()
 	// return empty optional when not quitting app
 	return {};
 }
+void Window::EnableCursor()
+{
+	cursorEnabled = true;
+	ShowCursor();
+	EnableImGuiMouse();
+	FreeCursor();
+}
+
+void Window::DisableCursor()
+{
+	cursorEnabled = false;
+	HideCursor();
+	DisableImGuiMouse();
+	ConfineCursor();
+}
+void Window::HideCursor()
+{
+	while( ::ShowCursor( FALSE ) >= 0 );
+}
+
+void Window::ShowCursor()
+{
+	while( ::ShowCursor( TRUE ) < 0 );
+}
+
+void Window::EnableImGuiMouse()
+{
+	ImGui::GetIO().ConfigFlags &= ~ImGuiConfigFlags_NoMouse;
+}
+
+void Window::DisableImGuiMouse()
+{
+	ImGui::GetIO().ConfigFlags |= ~ImGuiConfigFlags_NoMouse;
+}
+
+void Window::ConfineCursor() noexcept
+{
+	RECT rect; 
+	GetClientRect( hWnd,&rect );
+	MapWindowPoints( hWnd,nullptr,reinterpret_cast<POINT*>(&rect),2 );
+	ClipCursor( &rect );
+}
+
+void Window::FreeCursor() noexcept
+{
+	ClipCursor(nullptr);
+}
+
+bool Window::CursorEnabled() const noexcept
+{
+	return cursorEnabled;
+}
 
 Graphics& Window::Gfx()
 {
@@ -191,9 +253,35 @@ LRESULT Window::HandleMsg( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noex
 		break;
 	case WM_KILLFOCUS:
 		kbd.ClearState();
-		break;	
+		break;
+	case WM_ACTIVATE:
+		if (!cursorEnabled)
+		{
+			if( wParam & WA_ACTIVE )
+			{
+				ConfineCursor();
+				HideCursor();
+			}
+			else
+			{
+				FreeCursor();
+				ShowCursor();
+			}
+		}
+		break;
 	case WM_MOUSEMOVE:
 		{
+			// cursorless exclusive gets first dibs
+			if( !cursorEnabled )
+			{
+				if( !mouse.IsInWindow() )
+				{
+					SetCapture( hWnd );
+					mouse.OnMouseEnter();
+					HideCursor();
+				}
+				break;
+			}
 			// stifle this mouse message if imgui wants to capture
 			if( imio.WantCaptureMouse )
 			{
@@ -226,9 +314,53 @@ LRESULT Window::HandleMsg( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noex
 			}
 			break;
 		}
+	case WM_INPUT:
+		{
+			if( !mouse.RawEnabled() )
+			{
+				break;
+			}
+			UINT size;
+			// first get the size of the input data
+			if( GetRawInputData(
+				reinterpret_cast<HRAWINPUT>(lParam),
+				RID_INPUT,
+				nullptr,
+				&size,
+				sizeof( RAWINPUTHEADER ) ) == -1)
+			{
+				// bail msg processing if error
+				break;
+			}
+			rawBuffer.resize( size );
+			// read in the input data
+			if( GetRawInputData(
+				reinterpret_cast<HRAWINPUT>(lParam),
+				RID_INPUT,
+				rawBuffer.data(),
+				&size,
+				sizeof( RAWINPUTHEADER ) ) != size )
+			{
+				// bail msg processing if error
+				break;
+			}
+			// process the raw input data
+			auto& ri = reinterpret_cast<const RAWINPUT&>(*rawBuffer.data());
+			if( ri.header.dwType == RIM_TYPEMOUSE &&
+				(ri.data.mouse.lLastX != 0 || ri.data.mouse.lLastY != 0) )
+			{
+				mouse.OnRawDelta( ri.data.mouse.lLastX,ri.data.mouse.lLastY );
+			}
+			break;		
+		}
 	case WM_LBUTTONDOWN:
 		{
 			SetForegroundWindow( hWnd );
+			if (!cursorEnabled)
+			{
+				ConfineCursor();
+				HideCursor();
+			}
 			// stifle this mouse message if imgui wants to capture
 			if( imio.WantCaptureMouse )
 			{

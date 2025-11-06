@@ -56,8 +56,17 @@ public:
     Window& operator=( const Window& ) = delete;
     void SetTitle( const std::string& title );
     static std::optional<int> ProcessMessages();
-    Graphics& Gfx(); 
+    Graphics& Gfx();
+    void EnableCursor();
+    void DisableCursor();
+    bool CursorEnabled() const noexcept;
 private:
+    void HideCursor();
+    void ShowCursor();
+    void EnableImGuiMouse();
+    void DisableImGuiMouse();
+    void ConfineCursor() noexcept;
+    void FreeCursor() noexcept;
     static LRESULT CALLBACK HandleMsgSetup( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noexcept;
     static LRESULT CALLBACK HandleMsgThunk( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noexcept;
     LRESULT HandleMsg( HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam ) noexcept;
@@ -66,6 +75,8 @@ private:
     int height;
     HWND hWnd;
     std::unique_ptr<Graphics> pGfx;
+    bool cursorEnabled = false;
+    std::vector<BYTE> rawBuffer;
 public:
     Keyboard kbd;
     Mouse mouse;
@@ -75,3 +86,4 @@ public:
 #define CHWND_EXCEPT( hr ) Window::HrException( __LINE__,__FILE__,(hr) )
 #define CHWND_LAST_EXCEPT() Window::HrException( __LINE__,__FILE__,GetLastError() )
 #define CHWND_NOGFX_EXCEPT() Window::NoGfxException( __LINE__,__FILE__ )
+

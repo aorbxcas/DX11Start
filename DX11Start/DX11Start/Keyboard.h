@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <queue>
 #include <bitset>
+#include <optional>
 
 class Keyboard
 {
@@ -52,7 +53,7 @@ public:
 	Keyboard& operator=( const Keyboard& ) = delete;
 	// key event stuff
 	bool KeyIsPressed( unsigned char keycode ) const noexcept;
-	Event ReadKey() noexcept;
+	std::optional<Event> ReadKey() noexcept;
 	bool KeyIsEmpty() const noexcept;
 	void FlushKey() noexcept;
 	// char event stuff

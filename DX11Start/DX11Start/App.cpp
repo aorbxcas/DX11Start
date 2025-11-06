@@ -28,7 +28,7 @@ namespace dx = DirectX;
 GDIPlusManager gdipm;
 App::App()
     :
-    wnd( 800,600,"The Donkey Fart Box" ),
+    wnd( 1280,720,"The Donkey Fart Box" ),
     light( wnd.Gfx() )
 {
     // 自行安装assimp.lib并链接
@@ -116,6 +116,7 @@ App::App()
     
     wnd.Gfx().SetProjection( dx::XMMatrixPerspectiveLH( 1.0f,3.0f / 4.0f,0.5f,40.0f ) );
     //wnd.Gfx().SetCamera( dx::XMMatrixTranslation( 0.0f,0.0f,20.0f ) );
+    wnd.DisableCursor();
     
 }
 
@@ -154,7 +155,7 @@ void App::DoFrame()
     auto dt = timer.Mark() * speed_factor;
     static char buffer[1024];
     //wnd.Gfx().ClearBuffer( 0.07f,0.0f,0.12f );
-    
+
     if( wnd.kbd.KeyIsPressed( VK_SPACE ) )
     {
         wnd.Gfx().DisableImgui();
@@ -174,11 +175,26 @@ void App::DoFrame()
     // }
     nano.Draw( wnd.Gfx());
     light.Draw(wnd.Gfx());
-    ShowImguiDemoWindow();
+    while( const auto e = wnd.kbd.ReadKey())
+    {           
+        if( e->IsPress() && e->GetCode() == VK_INSERT )
+        {
+            if( wnd.CursorEnabled() )
+            {
+                wnd.DisableCursor();
+                wnd.mouse.EnableRaw();
+            }
+            else
+            {
+                wnd.EnableCursor();
+                wnd.mouse.DisableRaw();
+            }
+        }
+    }
     cam.SpawnControlWindow();
     light.SpawnControlWindow();
     nano.ShowWindow();
-    
+    ShowRawInputWindow();
 
     // if (wnd.Gfx().IsImguiEnabled() )
     // {
@@ -205,11 +221,17 @@ void App::DoFrame()
     // ImGui_ImplDX11_RenderDrawData( ImGui::GetDrawData() );
     wnd.Gfx().EndFrame();
 }
-void App::ShowImguiDemoWindow()
+void App::ShowRawInputWindow()
 {
-    static bool show_demo_window = true;
-    if( show_demo_window )
+    while( const auto d = wnd.mouse.ReadRawDelta() )
     {
-        ImGui::ShowDemoWindow( &show_demo_window );
+        x += d->x;
+        y += d->y;
     }
+    if( ImGui::Begin( "Raw Input" ) )
+    {
+        ImGui::Text( "Tally: (%d,%d)",x,y );
+        ImGui::Text("CursorEnabled:%d",wnd.CursorEnabled());
+    }
+    ImGui::End();
 }

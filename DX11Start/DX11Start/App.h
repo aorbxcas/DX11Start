@@ -16,8 +16,10 @@ public:
     ~App();
 private:
     void DoFrame();
-    void ShowImguiDemoWindow();
+    void ShowRawInputWindow();
 private:
+    int x = 0;
+    int y = 0;
     ImguiManager imgui;
     ChiliTimer timer;
     Window wnd;
