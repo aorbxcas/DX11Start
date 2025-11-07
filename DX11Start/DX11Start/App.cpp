@@ -2,6 +2,7 @@
 
 #include <sstream>
 #include <iomanip>
+#include <iostream>
 
 #include "Drawable/Box.h"
 #include <memory>
@@ -119,9 +120,14 @@ App::App()
     wnd.DisableCursor();
     
 }
-
+void siz(char a[])
+{
+    std::cout<<sizeof(a)<<std::endl;
+}
 int App::Go()
 {
+    char arr[20] = "hello";
+    siz(arr);
     while( true )
     {
         // process all messages pending, but to not block for new messages
@@ -232,7 +238,7 @@ void App::DoFrame()
     {
         if( !wnd.CursorEnabled() )
         {
-            cam.Rotate( delta->x,delta->y );
+            cam.Rotate( (float)delta->x,(float)delta->y );
         }
     }
     cam.SpawnControlWindow();
