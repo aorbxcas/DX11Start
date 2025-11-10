@@ -1,4 +1,2 @@
-﻿App.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ)，函数 "public: __cdecl App::App(void)" (??0App@@QEAA@XZ) 中引用了该符号
-App.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ)，函数 "public: __cdecl App::App(void)" (??0App@@QEAA@XZ) 中引用了该符号
-App.obj : error LNK2019: 无法解析的外部符号 "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z)，函数 "public: __cdecl App::App(void)" (??0App@@QEAA@XZ) 中引用了该符号
-D:\DevProject\ForkPro\DX11Start\DX11Start\x64\Debug\DX11Start.exe : fatal error LNK1120: 3 个无法解析的外部命令
+﻿  compilation object save succeeded; see C:\Users\Aorb\DX11Start\DX11Start\DX11Start\PhongVS.cso
+  DX11Start.vcxproj -> C:\Users\Aorb\DX11Start\DX11Start\x64\Debug\DX11Start.exe
