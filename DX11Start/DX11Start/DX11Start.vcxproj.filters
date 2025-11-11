@@ -84,19 +84,7 @@
     <ClCompile Include="Camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Drawable\Cylinder.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawable\Pyramid.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Drawable\Sampler.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawable\Sheet.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Drawable\SkinnedBox.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Drawable\SolidSphere.cpp">
@@ -133,6 +121,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Tools\GDIPlusManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AssTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable\Mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLayout.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -227,147 +227,6 @@
     <ClInclude Include="Macros\WindowsThrowMacros.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="assimp\include\assimp\ai_assert.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\anim.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\camera.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\cexport.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\cfileio.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\cimport.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\color4.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\color4.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Compiler\poppack1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Compiler\pstdint.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Compiler\pushpack1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\config.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\DefaultIOStream.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\DefaultIOSystem.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\DefaultLogger.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Defines.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\defs.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Exporter.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Importer.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\importerdesc.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\IOStream.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\IOSystem.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\light.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\Logger.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\LogStream.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\material.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\material.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\matrix3x3.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\matrix3x3.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\matrix4x4.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\matrix4x4.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\mesh.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\metadata.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\NullLogger.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\postprocess.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\ProgressHandler.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\quaternion.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\quaternion.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\scene.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\SceneCombiner.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\texture.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\types.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\vector2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\vector2.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\vector3.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\vector3.inl">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="assimp\include\assimp\version.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -375,9 +234,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Drawable\Cube.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawable\Cylinder.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Drawable\DrawableBase.h">
@@ -392,16 +248,7 @@
     <ClInclude Include="Drawable\Prism.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Drawable\Pyramid.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Drawable\Sampler.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawable\Sheet.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawable\SkinnedBox.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Drawable\SolidSphere.h">
@@ -455,6 +302,24 @@
     <ClInclude Include="Tools\GDIPlusManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="AssTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable\BindableCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionalNoexcept.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable\Mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLayout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="hlsl\ColorIndexVS.hlsl" />
@@ -466,13 +331,6 @@
     <FxCompile Include="hlsl\ColorIndexPS.hlsl" />
     <FxCompile Include="hlsl\TexturePS.hlsl" />
     <FxCompile Include="hlsl\TextureVS.hlsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assimp\include\lib\assimp-vc140-mt.dll">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="assimp\include\lib\zlib1.dll">
-      <Filter>资源文件</Filter>
-    </None>
+    <FxCompile Include="hlsl\PhongPSSpecMap.hlsl" />
   </ItemGroup>
 </Project>

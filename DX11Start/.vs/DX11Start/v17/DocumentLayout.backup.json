@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\hlsl\\PhongPSSpecMap.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\hlsl\\PhongPSSpecMap.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\AssTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\AssTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|solutionrelative:DX11Start\\App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC79B192-F82B-48DC-9B55-41BFF60C541F}|DX11Start\\DX11Start.vcxproj|C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\WinMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -91,7 +95,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,19 +111,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhongPSSpecMap.hlsl",
+              "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\hlsl\\PhongPSSpecMap.hlsl",
+              "RelativeDocumentMoniker": "DX11Start\\hlsl\\PhongPSSpecMap.hlsl",
+              "ToolTip": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\hlsl\\PhongPSSpecMap.hlsl",
+              "RelativeToolTip": "DX11Start\\hlsl\\PhongPSSpecMap.hlsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-11-11T07:50:58.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AssTest.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\AssTest.cpp",
               "RelativeDocumentMoniker": "DX11Start\\AssTest.cpp",
               "ToolTip": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\AssTest.cpp",
               "RelativeToolTip": "DX11Start\\AssTest.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-06T06:57:51.955Z"
+              "WhenOpened": "2025-11-06T06:57:51.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Importer.hpp",
               "DocumentMoniker": "D:\\DevProject\\ForkPro\\DX11Start\\DX11Start\\DX11Start\\assimp\\include\\assimp\\Importer.hpp",
               "ToolTip": "D:\\DevProject\\ForkPro\\DX11Start\\DX11Start\\DX11Start\\assimp\\include\\assimp\\Importer.hpp",
@@ -129,20 +147,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "App.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\App.cpp",
               "RelativeDocumentMoniker": "DX11Start\\App.cpp",
               "ToolTip": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\App.cpp",
               "RelativeToolTip": "DX11Start\\App.cpp",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAAJsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-18T09:18:49.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "TexturePS.hlsl",
               "DocumentMoniker": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\TexturePS.hlsl",
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\TexturePS.hlsl",
@@ -151,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ColorIndexVS.hlsl",
               "DocumentMoniker": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorIndexVS.hlsl",
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorIndexVS.hlsl",
@@ -160,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ColorBlendVS.hlsl",
               "DocumentMoniker": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendVS.hlsl",
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendVS.hlsl",
@@ -169,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ColorBlendPS.hlsl",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\ColorBlendPS.hlsl",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\ColorBlendPS.hlsl",
@@ -180,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "DXTrace.inl",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\DXTrace.inl",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\DXTrace.inl",
@@ -191,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WinMain.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\WinMain.cpp",
               "RelativeDocumentMoniker": "DX11Start\\WinMain.cpp",
@@ -203,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ColorBlendPS.hlsl",
               "DocumentMoniker": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendPS.hlsl",
               "ToolTip": "D:\\DevProject\\ForkPro\\hw3d\\hw3d\\ColorBlendPS.hlsl",
@@ -212,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "App.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\App.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\App.cpp",
@@ -223,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Window.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\Window.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\Window.cpp",
@@ -234,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Graphics.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\Graphics.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\Graphics.cpp",
@@ -245,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "WinMain.cpp",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\WinMain.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\WinMain.cpp",
@@ -256,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Graphics.h",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\Graphics.h",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\Graphics.h",
@@ -267,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ColorIndexPS.hlsl",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\ColorIndexPS.hlsl",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\ColorIndexPS.hlsl",
@@ -278,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Window.h",
               "DocumentMoniker": "C:\\Users\\39859\\hw3d\\hw3d\\Window.h",
               "RelativeDocumentMoniker": "..\\..\\..\\39859\\hw3d\\hw3d\\Window.h",
@@ -289,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ChiliException.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\ChiliException.cpp",
               "RelativeDocumentMoniker": "DX11Start\\ChiliException.cpp",
@@ -301,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ChiliWin.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.cpp",
               "RelativeDocumentMoniker": "DX11Start\\ChiliWin.cpp",
@@ -313,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Windows.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h",
@@ -325,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Graphics.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\Graphics.cpp",
               "RelativeDocumentMoniker": "DX11Start\\Graphics.cpp",
@@ -337,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Window.h",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\Window.h",
               "RelativeDocumentMoniker": "DX11Start\\Window.h",
@@ -349,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ChiliWin.h",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\ChiliWin.h",
               "RelativeDocumentMoniker": "DX11Start\\ChiliWin.h",
@@ -361,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Window.cpp",
               "DocumentMoniker": "C:\\Users\\Aorb\\DX11Start\\DX11Start\\DX11Start\\Window.cpp",
               "RelativeDocumentMoniker": "DX11Start\\Window.cpp",
