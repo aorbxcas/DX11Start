@@ -4,7 +4,6 @@
 #include <iomanip>
 #include <iostream>
 
-#include "Drawable/Box.h"
 #include <memory>
 #include "Tools/ChiliMath.h"
 
@@ -20,8 +19,7 @@
 #include <assimp/postprocess.h>
 
 #include "VertexLayout.h"
-
-#include "AssTest.h"
+#include "Bindable/VertexBuffer.h"
 
 namespace dx = DirectX;
 

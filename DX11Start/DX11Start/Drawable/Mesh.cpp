@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <sstream>
 #include "Surface.h"
+#include <iostream>
 namespace dx = DirectX;
 
 
@@ -31,27 +32,17 @@ const std::string& ModelException::GetNote() const noexcept
 }
 
 // Mesh
-Mesh::Mesh( Graphics& gfx,std::vector<std::unique_ptr<Bind::Bindable>> bindPtrs )
+Mesh::Mesh( Graphics& gfx,std::vector<std::shared_ptr<Bind::Bindable>> bindPtrs )
 {
-	if( !IsStaticInitialized() )
-	{
-		AddStaticBind( std::make_unique<Bind::Topology>( gfx,D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST ) );
-	}
+	
+	AddBind( std::make_shared<Bind::Topology>( gfx,D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST ) );
 
 	for( auto& pb : bindPtrs )
 	{
-		if( auto pi = dynamic_cast<Bind::IndexBuffer*>(pb.get()) )
-		{
-			AddIndexBuffer( std::unique_ptr<Bind::IndexBuffer>{ pi } );
-			pb.release();
-		}
-		else
-		{
-			AddBind( std::move( pb ) );
-		}
+		AddBind( std::move( pb ) );
 	}
 
-	AddBind( std::make_unique<Bind::TransformCbuf>( gfx,*this ) );
+	AddBind( std::make_shared<Bind::TransformCbuf>( gfx,*this ) );
 }
 void Mesh::Draw( Graphics& gfx,DirectX::FXMMATRIX accumulatedTransform ) const noexcept(!_DEBUG)
 {
@@ -228,8 +219,8 @@ void Model::ShowWindow( const char* windowName ) noexcept
 
 std::unique_ptr<Mesh> Model::ParseMesh( Graphics& gfx,const aiMesh& mesh,const aiMaterial* const* pMaterials  )
 {
-	namespace dx = DirectX;
 	using myVertex::VertexLayout;
+	using namespace Bind;
 
 	myVertex::VertexBuffer vbuf( std::move(
 		VertexLayout{}
@@ -260,21 +251,20 @@ std::unique_ptr<Mesh> Model::ParseMesh( Graphics& gfx,const aiMesh& mesh,const a
 	
 	auto& material = *pMaterials[mesh.mMaterialIndex];
 	
-	std::vector<std::unique_ptr<Bind::Bindable>> bindablePtrs;
+	std::vector<std::shared_ptr<Bindable>> bindablePtrs;
 	float shininess = 35.0f;
 	bool hasSpecularMap = false;
+	using namespace std::string_literals;
+	const auto base = "Models\\nano_textured\\"s;
 	if( mesh.mMaterialIndex >= 0 )
 	{
-		using namespace std::string_literals;
 		auto& material = *pMaterials[mesh.mMaterialIndex];
-		const auto base = "Models\\nano_textured\\"s;
 		aiString texFileName;
 		material.GetTexture( aiTextureType_DIFFUSE,0,&texFileName );
-		bindablePtrs.push_back( std::make_unique<Bind::Texture>( gfx,Surface::FromFile( base + texFileName.C_Str() ) ) );
-
+		bindablePtrs.push_back( Texture::Resolve( gfx,base + texFileName.C_Str() ) );
 		if( material.GetTexture( aiTextureType_SPECULAR,0,&texFileName ) == aiReturn_SUCCESS )
 		{
-			bindablePtrs.push_back( std::make_unique<Bind::Texture>( gfx,Surface::FromFile( base + texFileName.C_Str() ),1 ) );
+			bindablePtrs.push_back( Texture::Resolve( gfx,base + texFileName.C_Str() ,1 ) );
 			hasSpecularMap = true;
 		}
 		else
@@ -282,27 +272,30 @@ std::unique_ptr<Mesh> Model::ParseMesh( Graphics& gfx,const aiMesh& mesh,const a
 			material.Get( AI_MATKEY_SHININESS,shininess );
 		}
 
-		bindablePtrs.push_back( std::make_unique<Bind::Sampler>( gfx ) );
+		bindablePtrs.push_back( Sampler::Resolve( gfx ) );
 	}
 
-	bindablePtrs.push_back( std::make_unique<Bind::VertexBuffer>( gfx,vbuf ) );
+	auto meshTag = base + "%" + mesh.mName.C_Str();
+	bindablePtrs.push_back( VertexBuffer::Resolve( gfx,meshTag,vbuf ) );
 
-	bindablePtrs.push_back( std::make_unique<Bind::IndexBuffer>( gfx,indices ) );
+	bindablePtrs.push_back( IndexBuffer::Resolve( gfx,meshTag,indices ) );
+	
 
-	auto pvs = std::make_unique<Bind::VertexShader>( gfx,L"PhongVS.cso" );
-	auto pvsbc = pvs->GetBytecode();
+	auto pvs = VertexShader::Resolve( gfx,"PhongVS.cso" );
+	auto pvsbc = static_cast<VertexShader&>(*pvs).GetBytecode();
 	bindablePtrs.push_back( std::move( pvs ) );
 
 
-	bindablePtrs.push_back( std::make_unique<Bind::InputLayout>( gfx,vbuf.GetLayout().GetD3DLayout(),pvsbc ) );
+	bindablePtrs.push_back( InputLayout::Resolve( gfx,vbuf.GetLayout(),pvsbc ) );
+
 
 	if (hasSpecularMap)
 	{
-		bindablePtrs.push_back( std::make_unique<Bind::PixelShader>( gfx,L"PhongPSSpecMap.cso" ) );
+		bindablePtrs.push_back( PixelShader::Resolve( gfx,"PhongPSSpecMap.cso" ) );
 
 	}else
 	{
-		bindablePtrs.push_back( std::make_unique<Bind::PixelShader>( gfx,L"PhongPS.cso" ) );
+		bindablePtrs.push_back( PixelShader::Resolve( gfx,"PhongPS.cso" ) );
 
 	}
 	struct PSMaterialConstant
@@ -313,7 +306,7 @@ std::unique_ptr<Mesh> Model::ParseMesh( Graphics& gfx,const aiMesh& mesh,const a
 		float padding[2];
 	} pmc;
 	pmc.specularPower = shininess;
-	bindablePtrs.push_back( std::make_unique<Bind::PixelConstantBuffer<PSMaterialConstant>>( gfx,pmc,1u ) );
+	bindablePtrs.push_back( PixelConstantBuffer<PSMaterialConstant>::Resolve( gfx,pmc,1u ) );
 
 	return std::make_unique<Mesh>( gfx,std::move( bindablePtrs ) );
 }
@@ -342,3 +335,57 @@ std::unique_ptr<Node> Model::ParseNode( int& nextId,const aiNode& node ) noexcep
 
 	return pNode;
 }
+// class Weapon
+// {
+// 	~Weapon(){};
+// public:
+// 	virtual void Fire() = 0;
+// };
+// class WeaponDecorator:public Weapon
+// {
+// protected:
+// 	Weapon* weapon;
+// public:
+// 	WeaponDecorator(Weapon* w) : weapon(w) {}
+// 	void Fire() override
+// 	{
+// 		weapon->Fire();
+// 	}
+// 	virtual ~WeaponDecorator()
+// 	{
+// 		delete weapon;
+// 	}
+// };
+// class SilencerDecorator:public WeaponDecorator
+// {
+// public:
+// 	SilencerDecorator(Weapon* w) : WeaponDecorator(w) {};
+// 	void Fire() override
+// 	{
+// 		std::cout << "安装消音器后: ";
+// 		weapon->Fire();
+// 		std::cout << "声音变小了..." << std::endl;
+// 	}
+// };
+// class MP5:public Weapon
+// {
+// public:
+// 	MP5():Weapon()
+// 	{
+// 		
+// 	}
+// 	void Fire()
+// 	{
+// 		std::cout << "MP5: 哒哒哒..." << std::endl;
+// 	};
+// };
+//
+// void main()
+// {
+// 	Weapon* mp5 = new MP5();
+// 	mp5->Fire();
+// 	Weapon* silencedMP5 = new SilencerDecorator(mp5);
+// 	silencedMP5->Fire();
+// 	delete mp5;
+// 	delete silencedMP5;
+// }
